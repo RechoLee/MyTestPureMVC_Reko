@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Assets.Reko.Scripts
 {
+    /// <summary>
+    /// 将mvc注册到这个代理中
+    /// </summary>
     public class TestFacade:Facade
     {
         public TestFacade(GameObject canvas)

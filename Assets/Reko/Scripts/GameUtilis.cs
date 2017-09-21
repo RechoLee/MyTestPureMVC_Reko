@@ -21,6 +21,13 @@ public class GameUtilis : MonoBehaviour
         return tra;
     }
 
+    /// <summary>
+    /// 获取组件
+    /// </summary>
+    /// <typeparam name="T">组件类型</typeparam>
+    /// <param name="root">根节点</param>
+    /// <param name="path">unity中的树状路径</param>
+    /// <returns></returns>
     public static T GetComponent<T>(GameObject root ,string path) where T:Component
     {
         Transform tra = root.transform.Find(path);

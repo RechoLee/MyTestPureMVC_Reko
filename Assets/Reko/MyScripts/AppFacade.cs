@@ -7,10 +7,6 @@ public class AppFacade : Facade, IFacade
 {
     private static AppFacade instance=null;
 
-    public AppFacade()
-    {
-        RegisterProxy(new UserLoginProxy());
-    }
     
     public static AppFacade GetInstance()
     {
@@ -26,7 +22,11 @@ public class AppFacade : Facade, IFacade
         RegisterCommand(MyNotifications.CommitLogin,typeof(LoginCommand));
     }
 
-    
+    protected override void InitializeModel()
+    {
+        base.InitializeModel();
+        RegisterProxy(new UserLoginProxy());
+    }
 
     public void StartUp(GameObject root)
     {

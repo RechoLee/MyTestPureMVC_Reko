@@ -51,4 +51,10 @@ public class LoginMediator : Mediator
         list.Add(MyNotifications.LoginFiled);
         return list;
     }
+
+    public override void OnRegister()
+    {
+        base.OnRegister();
+        Debug.Log("注册了mediator");
+    }
 }

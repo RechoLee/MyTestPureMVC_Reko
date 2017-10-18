@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Reko/Scenes/PreLogin.unity
+    guid: 3012fe9b875362a40b54b3f5bd19005e
+  - enabled: 1
+    path: Assets/Reko/Scenes/Login.unity
+    guid: 1979f6cf39983914896da732c6a4a562

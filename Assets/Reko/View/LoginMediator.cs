@@ -55,6 +55,6 @@ public class LoginMediator : Mediator
     public override void OnRegister()
     {
         base.OnRegister();
-        Debug.Log("注册了mediator");
+        //Debug.Log("注册了mediator");
     }
 }
